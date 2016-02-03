@@ -1,0 +1,231 @@
+.mobile-nav{
+  #menu-btn {
+    display: block;
+    float: right;
+    right: 100%;
+    top: 5%;
+    margin-top: 0.50em;
+    line-height: 1.2;
+
+    span {
+      display: block;
+      width: 19px;
+      height: 3px;
+      margin: 4px 0;
+      background: rgb(0,0,0);
+      z-index: 99;
+    }
+  }
+}
+//mobile
+.responsive-menu {
+  display: none;
+
+  li {
+    list-style: none;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid;
+
+    a {
+      text-decoration: none;
+      color: #3d454c;
+      font-size: 1.3em;
+    }
+  }
+  li:hover {
+    background-color: #f0503a;
+    color: white;
+  }
+}
+.expand {
+  display: block !important;
+}
+.desktop {
+  display: none;
+}
+//tablet
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .desktop {
+    display: block;
+
+    li {
+      float: left;
+      width: 25%;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-size: 1.7em;
+        color: #3d454c;
+        padding: 0.5em;
+      }
+      a:hover {
+        background-color: #f0503a;
+        color: white;
+      }
+    }
+  }
+  .responsive-menu,
+  #menu-btn{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .desktop {
+    display: block;
+
+    li {
+      float: left;
+      list-style: none;
+      width: 20%;
+      margin: 0 1%;
+      background: white;
+
+      a {
+        color: #3d454c;
+        font-size: 2em;
+        text-decoration: none;
+        padding: 0.5em;
+      }
+      a:hover {
+        background-color: #f0503a;
+        color: white;
+      }
+    }
+  }
+  .responsive-menu,
+  #menu-btn {
+    display: none;
+  }
+}
+// Tooltip
+.first{
+  padding: 2em;
+  background: #f0503a;
+
+  label {
+    display: inline-block;
+    width: 8em;
+  }
+  .ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .ui-tooltip, .arrow:after {
+    background: black;
+    border: 2px solid white;
+  }
+}
+//Tabs
+.second{
+  background: #f0503a;
+}
+.ui-tabs-vertical {
+  width: 100%;
+}
+.ui-tabs-vertical .ui-tabs-nav {
+  padding: .2em .1em .2em .2em;
+  float: left;
+  width: 12em;
+  background: #f0503a;
+}
+.ui-tabs-vertical .ui-tabs-nav li {
+  clear: left;
+  width: 100%;
+  border-bottom-width: 1px !important;
+  border-right-width: 0 !important;
+  margin: 0 -1px .2em 0;
+  background: white;
+  color: #f0503a;
+}
+.ui-tabs-vertical .ui-tabs-nav li:hover{
+  background: #f0503a;
+  color: white;
+}
+.ui-tabs-vertical .ui-tabs-nav li a {
+  display:block;
+}
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+  padding-bottom: 0;
+  padding-right: .1em;
+  border-right-width: 1px;
+}
+.ui-tabs-vertical .ui-tabs-panel {
+  padding: 1em;
+  float: right;
+  width: 50em;
+}
+//Dialog
+
+body{
+  font-size: 62.5%;
+
+  fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+
+    label, input {
+      display: block;
+
+      text {
+        margin-bottom: 12px;
+        width: 95%;
+        padding: .4em;
+      }
+    }
+  }
+  #users-contain {
+    width: 350px;
+    margin: 20px 0;
+
+    h1 {
+      font-size: 1.2em;
+      margin: .6em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      color: white;
+
+      td, th {
+        border: 2px solid black;
+        padding: .6em 10px;
+        text-align: left;
+        background: #f0503a;
+      }
+    }
+  }
+  #create-user{
+    border: 2px solid black;
+    background: #f0503a;
+    color: black;
+
+  }
+}
+.third{
+  background: #f0503a;
+  padding: 1em;
+}
