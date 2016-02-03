@@ -1,0 +1,85 @@
+// level 1
+map()
+
+###
+#*#
+# #
+#@#
+###
+
+var i;
+
+for (i = 0; i < 2; i++) {
+  north(i);
+}
+
+Congratulation, you win this level
+
+// level 2
+
+map()
+
+###################
+#@               *#
+###################
+
+
+var i;
+
+for (i = 0; i < 16; i++) {
+  east(i);
+}
+
+Congratulation, you win this level
+
+// level 3
+
+map()
+ 
+##########
+#@########
+#  #######
+##  ######
+###  #####
+####  ####
+#####  ###
+######  ##
+####### *#
+##########
+
+var i;
+
+for (i = 0; i < 7; i++) {
+  south(i);
+    east(i);
+}
+
+Congratulation, you win this level
+
+// level 4
+
+map()
+
+#########
+#@#######
+#    ####
+#### ####
+####  ###
+##### ###
+##### ###
+#####   #
+#######*#
+#########
+
+
+var i;
+
+for(i = 0; i < 13 ; i++) {
+    if(isFree('east') == true) {
+        east();
+    } else {
+        south();
+    }
+};
+
+Congratulation, you win this level
